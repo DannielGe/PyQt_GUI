@@ -1,0 +1,2 @@
+支持向量机定义：
+支持向量机(Support Vector Machine,SVM)是一类按监督学习(supervisedlearning)方式对数据进行二元分类的广义线性分类器(generalized linear classifier)，其决策边界是对学习样本求解的最大边距超平面(maximum-margin hyperplane)。

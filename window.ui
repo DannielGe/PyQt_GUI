@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MLshow</class>
+ <widget class="QWidget" name="MLshow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>757</width>
+    <height>652</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>机器学习展示</string>
+  </property>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>731</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>301</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Adobe 黑体 Std R&quot;;
+font: 36pt &quot;Adobe 黑体 Std R&quot;;</string>
+   </property>
+   <property name="text">
+    <string>机器学习展示</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>160</y>
+     <width>150</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25 12pt &quot;Adobe Song Std&quot;;
+font: 25 18pt &quot;Adobe Song Std&quot;;</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>线性回归</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>朴素贝叶斯</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>决策树</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>随机森林</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>支持向量机</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>AdaBoost</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>K-means</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>KNN</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="principleButton">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>440</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25 14pt &quot;Adobe 宋体 Std L&quot;;</string>
+   </property>
+   <property name="text">
+    <string>原理</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="showButton">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>540</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25 14pt &quot;Adobe 宋体 Std L&quot;;</string>
+   </property>
+   <property name="text">
+    <string>效果</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>110</y>
+     <width>31</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="runButton">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>490</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25 14pt &quot;Adobe 宋体 Std L&quot;;</string>
+   </property>
+   <property name="text">
+    <string>运行</string>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>110</y>
+     <width>511</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="prinStack">
+    <widget class="QPlainTextEdit" name="plainTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>511</width>
+       <height>491</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 14pt &quot;Adobe 宋体 Std L&quot;;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="runStack">
+    <widget class="QPlainTextEdit" name="plainTextEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>511</width>
+       <height>481</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 14pt &quot;Adobe 宋体 Std L&quot;;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="resultStack"/>
+  </widget>
+  <widget class="QPushButton" name="clearButton">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>590</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25 14pt &quot;Adobe 宋体 Std L&quot;;</string>
+   </property>
+   <property name="text">
+    <string>清空</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
